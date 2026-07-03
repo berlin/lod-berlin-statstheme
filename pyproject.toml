@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lod-berlin-statstheme"
-version = "0.0.1"
+version = "0.0.2"
 description = "Jinja templates for linked data pages for statistical data"
 authors = [{ name = "Knud Möller", email = "knud.moeller@berlinonline.de" }]
 license = { file = "LICENSE" }
