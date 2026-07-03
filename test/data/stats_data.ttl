@@ -1,0 +1,153 @@
+@prefix cube: <https://cube.link/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix statstest: <https://berlinonline.github.io/lod-berlin-statstheme/test/> .
+@prefix demvoc: <https://berlinonline.github.io/lod-berlin-einwohner/vocab/> .
+@prefix lor: <https://berlinonline.github.io/lod-berlin-lor/> .
+
+#################################################################
+# Cube
+#################################################################
+
+statstest:cube
+    a cube:Cube ;
+    schema:name
+        "Berlin District Sighting Statistics"@en ,
+        "Statistik der Sichtungen in Berliner Bezirken"@de ;
+    schema:description
+        "Example statistical dataset containing fictional numbers of sightings for each Berlin district"@en ,
+        "Beispieldatensatz mit fiktiven Sichtungszahlen für jeden Berliner Bezirk"@de ;
+    cube:observationSet
+        statstest:obsset-1942 ,
+        statstest:obsset-1967 ,
+        statstest:obsset-1974 .
+
+#################################################################
+# Observation Set 1942
+#################################################################
+
+statstest:obsset-1942
+    a cube:ObservationSet ;
+    schema:name
+        "Sightings in 1942"@en ,
+        "Sichtungen im Jahr 1942"@de ;
+    schema:description
+        "Example observations for all Berlin districts in 1942"@en ,
+        "Beispielbeobachtungen für alle Berliner Bezirke im Jahr 1942"@de ;
+    cube:observation
+        statstest:obs-1942-01,
+        statstest:obs-1942-02,
+        statstest:obs-1942-03,
+        statstest:obs-1942-04,
+        statstest:obs-1942-05,
+        statstest:obs-1942-06,
+        statstest:obs-1942-07,
+        statstest:obs-1942-08,
+        statstest:obs-1942-09,
+        statstest:obs-1942-10,
+        statstest:obs-1942-11,
+        statstest:obs-1942-12 .
+
+#################################################################
+# Observation Set 1967
+#################################################################
+
+statstest:obsset-1967
+    a cube:ObservationSet ;
+    schema:name
+        "Sightings in 1967"@en ,
+        "Sichtungen im Jahr 1967"@de ;
+    schema:description
+        "Example observations for all Berlin districts in 1967"@en ,
+        "Beispielbeobachtungen für alle Berliner Bezirke im Jahr 1967"@de ;
+    cube:observation
+        statstest:obs-1967-01,
+        statstest:obs-1967-02,
+        statstest:obs-1967-03,
+        statstest:obs-1967-04,
+        statstest:obs-1967-05,
+        statstest:obs-1967-06,
+        statstest:obs-1967-07,
+        statstest:obs-1967-08,
+        statstest:obs-1967-09,
+        statstest:obs-1967-10,
+        statstest:obs-1967-11,
+        statstest:obs-1967-12 .
+
+#################################################################
+# Observation Set 1974
+#################################################################
+
+statstest:obsset-1974
+    a cube:ObservationSet ;
+    schema:name
+        "Sightings in 1974"@en ,
+        "Sichtungen im Jahr 1974"@de ;
+    schema:description
+        "Example observations for all Berlin districts in 1974"@en ,
+        "Beispielbeobachtungen für alle Berliner Bezirke im Jahr 1974"@de ;
+    cube:observation
+        statstest:obs-1974-01,
+        statstest:obs-1974-02,
+        statstest:obs-1974-03,
+        statstest:obs-1974-04,
+        statstest:obs-1974-05,
+        statstest:obs-1974-06,
+        statstest:obs-1974-07,
+        statstest:obs-1974-08,
+        statstest:obs-1974-09,
+        statstest:obs-1974-10,
+        statstest:obs-1974-11,
+        statstest:obs-1974-12 .
+
+#################################################################
+# Observations - 1942
+#################################################################
+
+statstest:obs-1942-01 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_01 ; statstest:numberOfSightings 14 .
+statstest:obs-1942-02 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_02 ; statstest:numberOfSightings 21 .
+statstest:obs-1942-03 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_03 ; statstest:numberOfSightings 17 .
+statstest:obs-1942-04 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_04 ; statstest:numberOfSightings 35 .
+statstest:obs-1942-05 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_05 ; statstest:numberOfSightings 29 .
+statstest:obs-1942-06 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_06 ; statstest:numberOfSightings 11 .
+statstest:obs-1942-07 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_07 ; statstest:numberOfSightings 24 .
+statstest:obs-1942-08 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_08 ; statstest:numberOfSightings 42 .
+statstest:obs-1942-09 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_09 ; statstest:numberOfSightings 19 .
+statstest:obs-1942-10 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_10 ; statstest:numberOfSightings 26 .
+statstest:obs-1942-11 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_11 ; statstest:numberOfSightings 38 .
+statstest:obs-1942-12 a cube:Observation ; dcterms:date "1942"^^xsd:gYear ; demvoc:raumid lor:bez_12 ; statstest:numberOfSightings 16 .
+
+#################################################################
+# Observations - 1967
+#################################################################
+
+statstest:obs-1967-01 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_01 ; statstest:numberOfSightings 18 .
+statstest:obs-1967-02 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_02 ; statstest:numberOfSightings 25 .
+statstest:obs-1967-03 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_03 ; statstest:numberOfSightings 32 .
+statstest:obs-1967-04 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_04 ; statstest:numberOfSightings 12 .
+statstest:obs-1967-05 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_05 ; statstest:numberOfSightings 37 .
+statstest:obs-1967-06 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_06 ; statstest:numberOfSightings 28 .
+statstest:obs-1967-07 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_07 ; statstest:numberOfSightings 15 .
+statstest:obs-1967-08 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_08 ; statstest:numberOfSightings 40 .
+statstest:obs-1967-09 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_09 ; statstest:numberOfSightings 22 .
+statstest:obs-1967-10 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_10 ; statstest:numberOfSightings 31 .
+statstest:obs-1967-11 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_11 ; statstest:numberOfSightings 13 .
+statstest:obs-1967-12 a cube:Observation ; dcterms:date "1967"^^xsd:gYear ; demvoc:raumid lor:bez_12 ; statstest:numberOfSightings 34 .
+
+#################################################################
+# Observations - 1974
+#################################################################
+
+statstest:obs-1974-01 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_01 ; statstest:numberOfSightings 20 .
+statstest:obs-1974-02 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_02 ; statstest:numberOfSightings 11 .
+statstest:obs-1974-03 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_03 ; statstest:numberOfSightings 27 .
+statstest:obs-1974-04 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_04 ; statstest:numberOfSightings 39 .
+statstest:obs-1974-05 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_05 ; statstest:numberOfSightings 23 .
+statstest:obs-1974-06 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_06 ; statstest:numberOfSightings 30 .
+statstest:obs-1974-07 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_07 ; statstest:numberOfSightings 16 .
+statstest:obs-1974-08 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_08 ; statstest:numberOfSightings 41 .
+statstest:obs-1974-09 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_09 ; statstest:numberOfSightings 35 .
+statstest:obs-1974-10 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_10 ; statstest:numberOfSightings 18 .
+statstest:obs-1974-11 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_11 ; statstest:numberOfSightings 24 .
+statstest:obs-1974-12 a cube:Observation ; dcterms:date "1974"^^xsd:gYear ; demvoc:raumid lor:bez_12 ; statstest:numberOfSightings 33 .

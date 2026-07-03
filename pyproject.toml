@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lod-berlin-statstheme"
+version = "0.0.1"
+description = "Jinja templates for linked data pages for statistical data"
+authors = [{ name = "Knud Möller", email = "knud.moeller@berlinonline.de" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/berlin/lod-berlin-statstheme"
+Issues = "https://github.com/berlin/lod-berlin-statstheme/issues"

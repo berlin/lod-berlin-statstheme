@@ -1,0 +1,4 @@
+include berlin/lod/statstheme/templates/*.html.jinja
+include berlin/lod/statstheme/assets/*.css
+include berlin/lod/statstheme/assets/*.js
+include berlin/lod/statstheme/config/*.yml

@@ -1,0 +1,12 @@
+venv
+__pycache__
+.DS_Store
+.vscode/
+build/
+*.egg-info/
+test/.git*
+test/_site
+test/bin
+test/assets
+test/config
+test/templates/berlin.lod.*
